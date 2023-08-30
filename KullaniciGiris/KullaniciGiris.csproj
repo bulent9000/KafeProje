@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{490B9BBA-B05B-4724-8D5A-72EFD5F8469A}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>KullaniciGiris</RootNamespace>
+    <AssemblyName>KullaniciGiris</AssemblyName>
+    <TargetFrameworkVersion>v4.6.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="IcecekSiparisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="IcecekSiparisEkrani.Designer.cs">
+      <DependentUpon>IcecekSiparisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasadaHesapEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasadaHesapEkrani.Designer.cs">
+      <DependentUpon>MasadaHesapEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MasalarEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MasalarEkrani.Designer.cs">
+      <DependentUpon>MasalarEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MüsteriSiparisKayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MüsteriSiparisKayitEkrani.Designer.cs">
+      <DependentUpon>MüsteriSiparisKayitEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OdemeOnay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OdemeOnay.Designer.cs">
+      <DependentUpon>OdemeOnay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineHesapEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineHesapEkrani.Designer.cs">
+      <DependentUpon>OnlineHesapEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineSiparisMüsteriKayitEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineSiparisMüsteriKayitEkrani.Designer.cs">
+      <DependentUpon>OnlineSiparisMüsteriKayitEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="OnlineYiyecekSiparisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="OnlineYiyecekSiparisEkrani.Designer.cs">
+      <DependentUpon>OnlineYiyecekSiparisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SiparisTürüEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SiparisTürüEkrani.Designer.cs">
+      <DependentUpon>SiparisTürüEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TatliSiparisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TatliSiparisEkrani.Designer.cs">
+      <DependentUpon>TatliSiparisEkrani.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YetkiliAnaForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliAnaForm.Designer.cs">
+      <DependentUpon>YetkiliAnaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YetkiliAnaformu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YetkiliAnaformu.Designer.cs">
+      <DependentUpon>YetkiliAnaformu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="YiyecekSiparisEkrani.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="YiyecekSiparisEkrani.Designer.cs">
+      <DependentUpon>YiyecekSiparisEkrani.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="IcecekSiparisEkrani.resx">
+      <DependentUpon>IcecekSiparisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasadaHesapEkrani.resx">
+      <DependentUpon>MasadaHesapEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MasalarEkrani.resx">
+      <DependentUpon>MasalarEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MüsteriSiparisKayitEkrani.resx">
+      <DependentUpon>MüsteriSiparisKayitEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OdemeOnay.resx">
+      <DependentUpon>OdemeOnay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineHesapEkrani.resx">
+      <DependentUpon>OnlineHesapEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineSiparisMüsteriKayitEkrani.resx">
+      <DependentUpon>OnlineSiparisMüsteriKayitEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="OnlineYiyecekSiparisEkrani.resx">
+      <DependentUpon>OnlineYiyecekSiparisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="SiparisTürüEkrani.resx">
+      <DependentUpon>SiparisTürüEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TatliSiparisEkrani.resx">
+      <DependentUpon>TatliSiparisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliAnaForm.resx">
+      <DependentUpon>YetkiliAnaForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YetkiliAnaformu.resx">
+      <DependentUpon>YetkiliAnaformu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="YiyecekSiparisEkrani.resx">
+      <DependentUpon>YiyecekSiparisEkrani.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\kafe.core\kafe.core.csproj">
+      <Project>{cad97c0d-ceac-4302-9a08-180c6752fd59}</Project>
+      <Name>kafe.core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
